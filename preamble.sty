@@ -1,0 +1,36 @@
+\usepackage[margin=1.05in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage[backend=biber,sorting=ynt,style=ieee]{biblatex}
+
+
+
+%%%%%  Plugins  %%%%%
+\usepackage{plugins/math}
+% \usepackage{plugins/computationally_hard}
+
+
+%%%%%  Config  %%%%% 
+\parindent=0pt
+\pagestyle{fancy}
+\setlength{\headheight}{14.5pt}
+\hypersetup{colorlinks=true,linkcolor=blue, citecolor=black}
+\addbibresource{refs.bib}
+% \renewcommand{\baselinestretch}{1.2}
+
+
+%%%%%  Definitions %%%%%
+\def\mydate                 {\today}
+\def\mytitle                {Logic for Security Assignment 1}
+\def\mycourseno             {02244}
+\def\mycourse               {Logic for Security}
+\def\myschool               {DTU Compute}
+\lhead{\mycourseno\,-\,\mycourse}
+\rhead{\mydate{}}
